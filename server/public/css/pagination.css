@@ -1,0 +1,19 @@
+.pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    
+    
+}
+.pagination li{
+   padding: 8px 12px;
+   border: 1px solid #ccc;
+}
+
+button{
+    font-size: 14px;
+    background-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}

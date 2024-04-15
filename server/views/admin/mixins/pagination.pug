@@ -1,0 +1,13 @@
+mixin pagination(currentPage, totalPage)
+    head
+        link(rel="stylesheet", href="/css/pagination.css")
+    body
+        ul(class='pagination')
+            li(page-number =`${currentPage==1 ? 1 : currentPage -1}`)
+                button Trang trước
+            -for( let i =1; i<=totalPage;i++)
+                li(page-number=`${i}`)
+                    button #{i}
+            li(page-number =`${currentPage==totalPage ? totalPage : currentPage +1}`)
+                button Trang sau
+        script(src="/js/pagination.js") 

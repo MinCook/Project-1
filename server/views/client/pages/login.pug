@@ -1,0 +1,22 @@
+html
+    head 
+        link(rel="stylesheet", href="/css/style.css")
+    body 
+        div(class="login")
+            div(class="login--wrap")
+                div(class="login--content")
+                    div(class="login--left")
+                        img(src="/img/login.webp")
+                    div(class="login--right")
+                        div(class="login--right__wrap")
+                            p Member Login 
+                            div(class="login--right__info")
+                                form(action="", method="post") 
+                                    input(type='text' name='email' placeholder='Email') 
+                                    input(type='password' name='pass' placeholder='Password')
+                                    button(type="submit") LOGIN
+                            div(class="text-center")
+                                span Forgot 
+                                a(href="/login/forgotPass") Username / Password ?
+                                br
+                                a(href="/register") Register ?

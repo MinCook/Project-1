@@ -1,0 +1,51 @@
+header
+    body
+        link(rel="stylesheet", href="/css/style.css")
+        link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+        div(class='header ')
+            div(class='header--left')
+                img(src='/img/logo--right.png')
+            div(class='header--right')
+                div(class='header--right__cnt1')
+                    ul
+                        li
+                            a(href="/") Home
+                        li
+                            a(href="/products") Shop
+                        li
+                            a Features
+                        li
+                            a Pages
+                        li
+                            a Buy Now
+                div(class='header--right__cnt2')
+                    ul
+                        if(user )
+                            li
+                                a(href="/user/products")
+                                    i.fa-solid.fa-magnifying-glass
+                            li(class="mainNofi")
+                                a(href="/user/cart")
+                                    i.fa-solid.fa-cart-shopping
+                                    if(miniCart >0)
+                                        div(class='miniNofi') #{miniCart}
+                            li
+                                span(nameHeader) #{user.fullName}
+                            li
+                                a(href="/login")
+                                    i.fa-solid.fa-right-from-bracket
+                        else 
+                            li
+                                a(href="/products")
+                                    i.fa-solid.fa-magnifying-glass
+                            li
+                                a(href="/login")
+                                    i.fa-solid.fa-user
+                            li(class="mainNofi")
+                                a(href="/cart")
+                                    i.fa-solid.fa-cart-shopping
+                                    if(miniCart >0)
+                                        div(class='miniNofi') #{miniCart}
+                        
+                              
+                    

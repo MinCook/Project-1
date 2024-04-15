@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+:root {
+    --ft1: Karla, sans-serif;
+}
+
+* {
+
+    font-family: var(--ft1);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none !important;
+}
+.sidebar-dark{
+    margin: 0;
+}
+ ul {
+    list-style: none;
+    margin: 0;
+    padding:0;
+} 
+a{
+    color:#EEF0EB
+}
+.col-10{
+    height: 100vh;
+}
+.left{
+    background-color: #4e73df;
+    object-fit: contain;
+    color: #fff;
+    height: 120vh;
+}
+.section-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    margin: 0;
+    padding: 0;
+}
+.section-1 li{
+    padding-right: 10px;
+    font-size: 22px;
+    font-weight: 800;
+}
+.section-1 li i{
+    rotate: 30deg;
+    font-size: 32px;
+} 
+.section-2{
+    display: flex;
+    align-items: center;
+    height: 7vh;
+    font-size: 16px;
+    padding:10px 0px 10px 20px;
+}
+.section-2 i{
+    font-size: 22px;
+    margin-right: 10px;
+}
+.section-3{
+    font-size: 16px;
+    padding:10px 0px 10px 20px;
+}
+.section-3 i{
+    font-size: 22px;
+    margin-right: 10px;
+    
+}
+.section-3 ul{
+    padding: 0px;
+    margin-top: 18px;
+}
+.section-3 ul li{
+    font-size: 14px;
+    padding: 10px 0px;
+    opacity: 60%;
+}
+.section-3 a{
+    color: #fff;
+}
+.section-3 ul li:hover{
+    opacity: 100%;
+}
+
+.header{
+   text-align: right;
+   padding: 17px 80px;
+    
+}
+.header i{
+    font-size: 22px;
+    font-weight: 800;
+    padding-right: 20px;
+}
+.header span,
+.header a{
+    font-weight: 600;
+    font-size: 16px;
+    color: black;
+    opacity: 80%;
+    margin-right: 14px;
+}
+
+.footer{
+    text-align: center;
+    font-size: 14px;
+    color: #858796;
+}
+
+
+
+.productList--img{
+    width: 100px;
+    height: 100px;
+}
+.productList--edit{
+    display: flex;
+    font-size: 18px;
+}
+.productList--edit li{
+    margin-left: 10px;
+}
+.main{
+    position: relative;
+    width: 100%;
+    
+}
+.productList--detail{
+    position: absolute;
+    z-index: 3;
+    left: 10%;
+    bottom: 10%;
+}
+.main--wrap{
+    width: 80%;
+    position: absolute;
+    margin-left: 150px;
+    margin-top: 40px;
+    /* background-color: #F1F3F6; */
+
+}
+.main--wrap form{
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.screen--admin{
+    min-width: 100%;
+    
+}
+.screen--admin__wrap{
+   display: flex;
+}
+table, th, td {
+    font-family: var(--ft1);
+    border: 1px solid #dee2e6;
+    text-align: center;
+  }
+  th{
+    padding:16px
+  }
+.productList--edit{
+    margin-left: 10px;
+  }
+.form-group__wrap{
+    display: flex;
+}
+.form-group__wrap .form-group{
+    margin-right: 80px;
+}
+.form-group__wrap .form-group input{
+    width: 40%;
+    height: 40%;
+}
+.form-group__hori{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.form-group__hori label{
+    font-size: 18px;
+    font-family: var(--ft1);
+   padding-right: 10px;
+   
+
+}
+.form-group label{
+    font-size: 18px;
+    font-family: var(--ft1);
+    display: block;
+    margin: 10px 0px;
+}
+.image--show {
+    width: 100px;
+} 
+
+.form-group input, 
+.form-group textarea{
+    border: 1px solid #dee2e6;
+    width: 98%;
+    padding: 10px;
+}
+.form-group input :nth-child(4),
+.form-group input :nth-child(5){
+    width: 80px;
+    height: 30px;
+}
+.form-group__radio{
+    display: flex;
+}
+#detailForm{
+    border-radius: 20px;
+    border: 1px solid #dee2e6;
+    padding: 30px;
+    background-color: #EEF0EB ;
+}
+#detailForm h4{
+    text-align: center;
+}
+.btn{
+    margin-top: 40px;
+    width: 50%;
+    height: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #4e73df;
+}
+input[input-img]{
+    width: 110px;
+    border: none;
+    display: block;
+}
+.X{
+    display: none;
+}
+.O{
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #4e73df;
+    text-align: center;
+    line-height: 20px;
+    position: absolute;
+    top: 390px;
+    left: 138px;
+}
+.form-group__radio label{
+    padding-right: 46px;
+}
+.table--1 td{
+    padding: 6px;
+}
+.table--2{
+    margin-top: 30px;
+}
+.table--2 input{
+    line-height: 30px;
+}
+#btn--submit{
+    margin-top: 20px;
+    padding: 4px;
+    margin-left: 370px;
+}
+table[permission] td{
+    padding: 4px ;
+}
+.table--3 td{
+    padding:6px
+}
+input[account-input]{
+    min-width: 200px;
+}
+#btn--submit__1{
+    margin-top: 10px;
+    margin-left: 300px;
+}

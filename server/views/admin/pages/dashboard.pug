@@ -1,0 +1,46 @@
+html 
+    head
+        link(rel="stylesheet", href="/css/styleAdmin.css")
+        link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css')
+        link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH' crossorigin='anonymous')
+        link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css' integrity='sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==' crossorigin='anonymous' referrerpolicy='no-referrer')
+    body
+        div(class="screen--admin")
+            div(class="screen--admin__wrap")
+                div(class="col-2")
+                    include ../includes/left.pug
+                div(class="col-10") 
+                    div(class="right")
+                        include ../includes/header.pug
+                        hr(class="sidebar-dark")
+                        div(class="main")
+                            div(class="main--wrap")
+                                h2 Thông tin người dùng
+                                table(class="table--2")
+                                    tr
+                                        th
+                                            label(for="Tên") Tên
+                                        th
+                                            input(type="text", value=user.fullName)
+                                    tr
+                                        th
+                                            label(for="Số điện thoại") Số điện thoại
+                                        th
+                                            input(type="text", value=user.phone)
+                                    tr
+                                        th
+                                            label(for="Email") Email
+                                        th
+                                            input(type="text", value=user.email)
+                                    tr
+                                        th
+                                            label(for="role") Phân quyền
+                                        th
+                                            input(type="text", value=role.title)
+                                    tr
+                                        th
+                                            label(for="role") Quyền thực thi
+                                        th
+                                            each permission in role.permissions     
+                                                p #{permission}
+    script(src="/js/account.js")

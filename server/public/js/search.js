@@ -1,0 +1,6 @@
+const Select = document.querySelector("select")
+const SortBy= Select.getAttribute("SortBy")
+const optionASC = Select.querySelector(".asc")
+const optionDESC = Select.querySelector(".desc")
+console.log(SortBy,optionASC, optionDESC)
+SortBy == "asc" ? optionASC.setAttribute("selected", true) :  optionDESC.setAttribute("selected", true)

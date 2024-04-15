@@ -1,0 +1,15 @@
+const dashboardRoutes = require("./dashboard.routes")
+const productListRoutes = require("./productList.routes")
+const rolesRoutes = require("./role.routes")
+const permissionsRoutes = require("./permissions.routes")
+const accountRoutes = require("./account.routes") 
+const authenRoutes = require("./authen.routes") 
+const authenMiddleware = require("../../middlewares/admin/authen.middleware")
+module.exports = (app)=>{
+    app.use("/admin/dashboard",authenMiddleware.requireAuth,dashboardRoutes)
+    app.use("/admin/productList",authenMiddleware.requireAuth,productListRoutes)
+    app.use("/admin/roles",authenMiddleware.requireAuth,rolesRoutes)
+    app.use("/admin/permissions",authenMiddleware.requireAuth,permissionsRoutes)
+    app.use("/admin/account",authenMiddleware.requireAuth,accountRoutes)
+    app.use("/admin",authenRoutes)
+}

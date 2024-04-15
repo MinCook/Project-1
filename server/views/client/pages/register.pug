@@ -1,0 +1,24 @@
+html
+    head 
+        link(rel="stylesheet", href="/css/style.css")
+    body 
+        div(class="login")
+            div(class="login--wrap")
+                div(class="login--content")
+                    div(class="login--left")
+                        img(src="/img/login.webp")
+                    div(class="login--right")
+                        div(class="login--right__wrap")
+                            p Register
+                            div(class="login--right__info")
+                                form(action="/register", method="post")
+                                    input(type='text' name='fullName' placeholder='Name' required) 
+                                    input(type='email' name='email' placeholder='Email' required) 
+                                    input(type='text' name='address' placeholder='Address' required) 
+                                    input(type='number' name='phone' placeholder='Phone' required) 
+                                    input(type='password' name='password' placeholder='Password' required)
+                                    input(type='password' name='confirmPassword' placeholder='Confirm Password' required)
+                                    button(type="submit") ĐĂNG KÍ
+                            div(class="text-center")
+                                span Forgot 
+                                a(href="/login/forgotPass") Username / Password ?

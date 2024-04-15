@@ -1,0 +1,37 @@
+left
+    head 
+        link(rel="stylesheet", href="/css/styleAdmin.css")
+    body 
+        div(class="left")
+            ul(class="section-1")
+                li(class="logo")
+                    i.fa-regular.fa-face-laugh-beam
+                li ADMIN 
+            hr(class="sidebar-dark")
+            div(class="section-2")
+                span 
+                    i.fa-solid.fa-gauge
+                a( href="/admin/dashboard")  Dashboard
+            hr(class="sidebar-dark")
+            div(class="section-3")
+                i.fa-solid.fa-list
+                span Chức năng 
+                ul 
+                    if(role.permissions.includes("view__product"))
+                        li
+                            a( href="/admin/productList") Danh sách sản phẩm
+                    if(role.permissions.includes("view__addProduct"))
+                        li 
+                            a(href="/admin/productList/created") Thêm mới sản phẩm
+                    if(role.permissions.includes("view__roles"))
+                        li 
+                            a(href="/admin/roles")  Phân quyền quản lí
+                    if(role.permissions.includes("view__permissions"))
+                        li 
+                            a(href="/admin/permissions")  Nhóm quyền quản lí
+                    if(role.permissions.includes("view__account"))
+                        li  
+                            a(href="/admin/account") Danh sách tài khoản
+                   
+
+                                
